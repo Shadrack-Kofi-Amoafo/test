@@ -1,0 +1,90 @@
+{
+  "generated_rows": 4494,
+  "legacy_rows_kept": 310,
+  "legacy_rows_dropped": {
+    "grounding": 44,
+    "garbled": 0,
+    "stub_safety": 0,
+    "truncated": 16,
+    "template": 0
+  },
+  "duplicate_assistant_texts_removed": 79,
+  "grounding_failures_removed": 16,
+  "grounding_failure_examples": [
+    [
+      "R03129",
+      "socratic_practice",
+      [
+        "2.5"
+      ]
+    ],
+    [
+      "R03130",
+      "socratic_practice",
+      [
+        "20",
+        "2.5"
+      ]
+    ],
+    [
+      "R03131",
+      "socratic_practice",
+      [
+        "2.5"
+      ]
+    ],
+    [
+      "R03132",
+      "socratic_practice",
+      [
+        "2.5"
+      ]
+    ],
+    [
+      "R03137",
+      "socratic_practice",
+      [
+        "20",
+        "2.5"
+      ]
+    ],
+    [
+      "R03142",
+      "socratic_practice",
+      [
+        "20",
+        "2.5"
+      ]
+    ],
+    [
+      "R03953",
+      "accessible_description",
+      [
+        "Bookings"
+      ]
+    ],
+    [
+      "R03954",
+      "accessible_description",
+      [
+        "Bookings"
+      ]
+    ],
+    [
+      "R03955",
+      "accessible_description",
+      [
+        "Bookings"
+      ]
+    ],
+    [
+      "R03956",
+      "accessible_description",
+      [
+        "Bookings"
+      ]
+    ]
+  ],
+  "final_rows": 4399,
+  "output": "/home/user/test/aria_repaired.jsonl"
+}
