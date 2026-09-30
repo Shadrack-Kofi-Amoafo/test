@@ -1,0 +1,88 @@
+{
+  "generated_rows": 5054,
+  "legacy_rows_kept": 310,
+  "legacy_rows_dropped": {
+    "grounding": 44,
+    "garbled": 0,
+    "stub_safety": 0,
+    "truncated": 16,
+    "template": 0
+  },
+  "duplicate_assistant_texts_removed": 192,
+  "grounding_failures_removed": 51,
+  "grounding_failure_examples": [
+    [
+      "R01771",
+      "socratic_practice",
+      [
+        "2.5"
+      ]
+    ],
+    [
+      "R01772",
+      "socratic_practice",
+      [
+        "20",
+        "2.5"
+      ]
+    ],
+    [
+      "R01773",
+      "socratic_practice",
+      [
+        "2.5"
+      ]
+    ],
+    [
+      "R01774",
+      "socratic_practice",
+      [
+        "2.5"
+      ]
+    ],
+    [
+      "R02198",
+      "socratic_practice",
+      [
+        "Bellman-Ford"
+      ]
+    ],
+    [
+      "R02200",
+      "socratic_practice",
+      [
+        "Bellman-Ford"
+      ]
+    ],
+    [
+      "R02201",
+      "socratic_practice",
+      [
+        "Bellman-Ford"
+      ]
+    ],
+    [
+      "R02202",
+      "socratic_practice",
+      [
+        "Bellman-Ford"
+      ]
+    ],
+    [
+      "R02203",
+      "socratic_practice",
+      [
+        "Bellman-Ford"
+      ]
+    ],
+    [
+      "R02206",
+      "socratic_practice",
+      [
+        "Bellman-Ford"
+      ]
+    ]
+  ],
+  "final_rows": 4811,
+  "output": "/home/user/test/aria_repaired.jsonl"
+}
