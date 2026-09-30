@@ -1,0 +1,6 @@
+===== R04877  conversational  failed: substantive_length
+--- PROMPT
+My query is slow.
+--- ANSWER
+Slow on how much data, and slow compared with what - seconds or minutes? Also paste the query and the table sizes and I will tell you what to look at first.
+

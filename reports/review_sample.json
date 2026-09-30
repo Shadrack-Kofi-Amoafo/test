@@ -1,0 +1,16 @@
+{
+  "random_100": {
+    "n": 100,
+    "passed": 99,
+    "pass_rate_pct": 99.0,
+    "failures_by_item": {
+      "substantive_length": 1
+    }
+  },
+  "most_repetitive_20": {
+    "n": 20,
+    "passed": 20,
+    "pass_rate_pct": 100.0,
+    "failures_by_item": {}
+  }
+}

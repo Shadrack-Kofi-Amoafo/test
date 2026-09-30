@@ -1,0 +1,414 @@
+{
+  "file": "aria_training_ready.jsonl",
+  "rows": 3617,
+  "d1_template_collapse": {
+    "distinct_masked_prompts": 861,
+    "distinct_ratio": 23.8,
+    "top_template_share_pct": 0.64,
+    "templates_over_2pct": 0,
+    "rows_in_templates_over_2pct": 0,
+    "top5": [
+      [
+        "course: mobile computing (week #, topic: lms record or it is rumor, status: not_yet_taught). records i can actually see (quoted): - [syllabus#per-record] per record syllabus#mobile computing-w#: in-scope is lms record or it is rumor. question: help with lms record or it is rumor for mobile computing week # (scenario #). what applies?",
+        23
+      ],
+      [
+        "course: introduction to e-commerce (week #, topic: quote indexed fees only, status: unknown). indexed records for this course (verbatim): - [syllabus#per-record] per record syllabus#introduction to e-commerce-w#: in-scope is quote indexed fees only. question: help with quote indexed fees only for introduction to e-commerce week # (scenario #). what applies?",
+        23
+      ],
+      [
+        "course: introduction to e-commerce (week #, topic: sandbox before live keys, status: known). provided records (course system, quoted verbatim): - [syllabus#per-record] per record syllabus#introduction to e-commerce-w#: in-scope is sandbox before live keys. question: help with sandbox before live keys for introduction to e-commerce week # (scenario #). what applies?",
+        23
+      ],
+      [
+        "course: mobile computing (week #, topic: emulator limits disclosed, status: currently_learning). evidence available in my records (verbatim): - [syllabus#per-record] per record syllabus#mobile computing-w#: in-scope is emulator limits disclosed. question: help with emulator limits disclosed for mobile computing week # (scenario #). what applies?",
+        23
+      ],
+      [
+        "course: information security (week #, topic: verify tool versions, status: currently_learning). evidence available in my records (verbatim): - [syllabus#per-record] per record syllabus#information security-w#: in-scope is verify tool versions. question: help with verify tool versions for information security week # (scenario #). what applies?",
+        23
+      ]
+    ]
+  },
+  "task_type_counts": {
+    "misconception_repair": 1070,
+    "uncertainty_boundary": 885,
+    "source_boundary": 140,
+    "socratic_practice": 1026,
+    "accessible_description": 60,
+    "grounded_teaching": 283,
+    "safety_integrity": 98,
+    "conversational": 29,
+    "planning": 26
+  },
+  "task_type_pct": {
+    "misconception_repair": 29.58,
+    "uncertainty_boundary": 24.47,
+    "source_boundary": 3.87,
+    "socratic_practice": 28.37,
+    "accessible_description": 1.66,
+    "grounded_teaching": 7.82,
+    "safety_integrity": 2.71,
+    "conversational": 0.8,
+    "planning": 0.72
+  },
+  "source_counts": {
+    "seed_eval": 993,
+    "seed_agent": 999,
+    "offline_rebuilt": 347,
+    "seed_tutor": 1220,
+    "authored": 58
+  },
+  "split_counts": {
+    "train": 3266,
+    "val": 168,
+    "test": 183
+  },
+  "d2_uncertainty_boundary": {
+    "rows": 885,
+    "distinct_topics": 33,
+    "avg_copies_per_topic": 26.8,
+    "identical_canned_nonanswer_rows": 855,
+    "status_counts": {
+      "CURRENTLY_LEARNING": 228,
+      "NOT_YET_TAUGHT": 226,
+      "UNKNOWN": 227,
+      "KNOWN": 188,
+      "NONE": 16
+    },
+    "responses_shared_across_statuses": 0,
+    "status_changes_response": true,
+    "median_record_lines": 1
+  },
+  "d3_misconception_repair": {
+    "rows": 1070,
+    "pct_of_dataset": 29.58,
+    "synthetic_case_n_rubric_rows": 900,
+    "self_contradictory_grading_rows": 900,
+    "misconception_copies_student_rows": 977,
+    "promise_without_delivery_rows": 174,
+    "ends_on_leadin_colon_rows": 81,
+    "verdicts": {
+      "partially_correct": 991,
+      "incorrect": 77,
+      "correct": 2
+    },
+    "truncated_rubric_rows": 93
+  },
+  "d4_socratic_practice": {
+    "rows": 1026,
+    "single_turn_rows": 942,
+    "single_turn_pct": 91.81,
+    "just_tell_me_rows": 903,
+    "try_ge_10_hint_only_rows": 68,
+    "answer_key_leak_rows": 900,
+    "distinct_concepts": 70,
+    "distinct_masked_responses": 406
+  },
+  "d5_domain_labels": {
+    "checkable_rows": 2976,
+    "mismatched_rows": 1583,
+    "mismatch_pct": 53.19,
+    "top_mismatches": [
+      {
+        "domain": "Introduction to Programming",
+        "prompt_course": "Introduction to Multimedia",
+        "n": 377
+      },
+      {
+        "domain": "Computer Science",
+        "prompt_course": "Introduction to Multimedia",
+        "n": 316
+      },
+      {
+        "domain": "Introduction to Programming",
+        "prompt_course": "Professional Computing",
+        "n": 130
+      },
+      {
+        "domain": "Data Structures",
+        "prompt_course": "Mobile Computing",
+        "n": 124
+      },
+      {
+        "domain": "Introduction to Programming",
+        "prompt_course": "Mobile Computing",
+        "n": 117
+      },
+      {
+        "domain": "Introduction to Programming",
+        "prompt_course": "Introduction to E-Commerce",
+        "n": 104
+      },
+      {
+        "domain": "Computer Networks",
+        "prompt_course": "Information Security",
+        "n": 78
+      },
+      {
+        "domain": "Computer Networks",
+        "prompt_course": "Introduction to E-Commerce",
+        "n": 46
+      }
+    ],
+    "rows_with_course_field": 0
+  },
+  "d6_openers": {
+    "stock_opener_on_long_answer_rows": 60,
+    "top_opener_share_pct": 3.98,
+    "openers_over_3pct": [
+      {
+        "opener": "Verdict: partially_correct (1/4). The gap is specific, not stylistic.",
+        "pct": 3.98
+      },
+      {
+        "opener": "Verdict: partially_correct - 1 of 4 rubric points earned.",
+        "pct": 3.95
+      },
+      {
+        "opener": "Verdict: partially_correct - the answer earns 1 of 4 points.",
+        "pct": 3.9
+      },
+      {
+        "opener": "Verdict: partially_correct (1/4 points). What is missing is named belo",
+        "pct": 3.84
+      },
+      {
+        "opener": "Stay with your attempt for one more step; that is where the learning i",
+        "pct": 3.12
+      },
+      {
+        "opener": "Start with your reasoning, not the label: the useful clue is in the se",
+        "pct": 3.12
+      },
+      {
+        "opener": "Keep the answer in your head for now; we are going to probe the proces",
+        "pct": 3.12
+      },
+      {
+        "opener": "Do not jump to the solution yet; let us inspect the step that matters.",
+        "pct": 3.1
+      }
+    ],
+    "distinct_openers": 505
+  },
+  "d7_grounding": {
+    "rows_with_ungrounded_specifics": 247,
+    "pct": 6.83,
+    "examples": [
+      {
+        "id": "D_03-t2-0012",
+        "terms": [
+          {
+            "kind": "date",
+            "term": "may"
+          }
+        ]
+      },
+      {
+        "id": "A_seed_022-t2-0040",
+        "terms": [
+          {
+            "kind": "number",
+            "term": "12"
+          },
+          {
+            "kind": "proper_noun",
+            "term": "September"
+          },
+          {
+            "kind": "date",
+            "term": "September"
+          },
+          {
+            "kind": "number",
+            "term": "80,90"
+          }
+        ]
+      },
+      {
+        "id": "A_seed_061-t0-0065",
+        "terms": [
+          {
+            "kind": "proper_noun",
+            "term": "Heading"
+          },
+          {
+            "kind": "proper_noun",
+            "term": "Mama Efua"
+          },
+          {
+            "kind": "proper_noun",
+            "term": "Kitchen"
+          }
+        ]
+      },
+      {
+        "id": "A_seed_031-t2-0075",
+        "terms": [
+          {
+            "kind": "proper_noun",
+            "term": "Access-Control-Allow-Origin"
+          },
+          {
+            "kind": "proper_noun",
+            "term": "Express"
+          }
+        ]
+      },
+      {
+        "id": "C_seed_064-t0-0076",
+        "terms": [
+          {
+            "kind": "form_code",
+            "term": "CC-1"
+          },
+          {
+            "kind": "proper_noun",
+            "term": "Compassionate Consideration"
+          },
+          {
+            "kind": "proper_noun",
+            "term": "Dean"
+          }
+        ]
+      },
+      {
+        "id": "C_seed_065-t0-0082",
+        "terms": [
+          {
+            "kind": "proper_noun",
+            "term": "Prof"
+          },
+          {
+            "kind": "proper_noun",
+            "term": "Completely"
+          },
+          {
+            "kind": "number",
+            "term": "2024"
+          }
+        ]
+      },
+      {
+        "id": "A_seed_070-t0-0086",
+        "terms": [
+          {
+            "kind": "date",
+            "term": "may"
+          }
+        ]
+      },
+      {
+        "id": "A_seed_012-t3-0098",
+        "terms": [
+          {
+            "kind": "date",
+            "term": "may"
+          }
+        ]
+      }
+    ],
+    "garbled_record_fragments": 1
+  },
+  "d8_task_type_labels": {
+    "safety_integrity_rows": 98,
+    "syllabus_stub_rows_mislabelled_safety": 45,
+    "real_safety_rows": 53
+  },
+  "d9_split_leakage": {
+    "val": {
+      "rows": 168,
+      "distinct": 115,
+      "rows_matching_a_train_prompt": 128,
+      "pct": 76.19
+    },
+    "test": {
+      "rows": 183,
+      "distinct": 135,
+      "rows_matching_a_train_prompt": 140,
+      "pct": 76.5
+    }
+  },
+  "d10_coverage": {
+    "multi_turn_rows_3plus_exchanges": 122,
+    "multi_turn_pct": 3.37,
+    "multi_turn_sources": [
+      "seed_tutor"
+    ],
+    "local_context_rows": 41,
+    "local_context_pct": 1.13,
+    "empty_or_nonmatching_retrieval_rows": 0,
+    "decline_graded_work_rows": 0,
+    "fully_correct_verdict_rows": 2,
+    "conversational": 29,
+    "planning": 26,
+    "accessible_description": 60
+  },
+  "E_diversity": {
+    "distinct_masked_prompts": 861,
+    "target_distinct_prompts_3000": false,
+    "max_template_share_pct": 0.64,
+    "target_no_template_over_2pct": true,
+    "duplicate_assistant_texts": 620,
+    "target_no_duplicate_assistant_text": false,
+    "assistant_len_p10": 201,
+    "assistant_len_median": 350,
+    "assistant_len_p90": 1042,
+    "short_answers_under_300_chars_pct": 43.43,
+    "target_multi_turn_25pct": false,
+    "target_local_10pct": false,
+    "task_mix_target_delta": {
+      "misconception_repair": {
+        "actual_pct": 29.58,
+        "target_pct": 20,
+        "delta": 9.58
+      },
+      "socratic_practice": {
+        "actual_pct": 28.37,
+        "target_pct": 20,
+        "delta": 8.37
+      },
+      "uncertainty_boundary": {
+        "actual_pct": 24.47,
+        "target_pct": 12,
+        "delta": 12.47
+      },
+      "source_boundary": {
+        "actual_pct": 3.87,
+        "target_pct": 8,
+        "delta": -4.13
+      },
+      "grounded_teaching": {
+        "actual_pct": 7.82,
+        "target_pct": 15,
+        "delta": -7.18
+      },
+      "safety_integrity": {
+        "actual_pct": 2.71,
+        "target_pct": 8,
+        "delta": -5.29
+      },
+      "planning": {
+        "actual_pct": 0.72,
+        "target_pct": 5,
+        "delta": -4.28
+      },
+      "conversational": {
+        "actual_pct": 0.8,
+        "target_pct": 5,
+        "delta": -4.2
+      },
+      "accessible_description": {
+        "actual_pct": 1.66,
+        "target_pct": 4,
+        "delta": -2.34
+      },
+      "other": {
+        "actual_pct": 0.0,
+        "target_pct": 3,
+        "delta": -3.0
+      }
+    }
+  }
+}
