@@ -1,0 +1,1160 @@
+{
+  "file": "aria_repaired.jsonl",
+  "rows": 4806,
+  "d1_template_collapse": {
+    "distinct_masked_prompts": 4599,
+    "distinct_ratio": 95.69,
+    "top_template_share_pct": 0.08,
+    "templates_over_2pct": 0,
+    "rows_in_templates_over_2pct": 0,
+    "top5": [
+      [
+        "my c++ assignment: two threads each increment a shared `int counter` #,# times. final value should be #,# but i get random junk like #, different every run. `counter++` is one statement \u2014 one line of code! how can half a statement execute? is the thread scheduler broken on my laptop?",
+        4
+      ],
+      [
+        "this is breaking my brain. user 'jos\u00e9' registered on his phone, then can't log in from the lab pc. i printed the stored username and the typed one: both show jos\u00e9. identical. but == says false! i even checked the lengths \u2014 stored is # characters, typed is #. how can the same four visible letters have different lengths? is the database corrupting my strings?",
+        4
+      ],
+      [
+        "my course-listing page takes # seconds to load. it only shows # courses with their instructor names! the database is clearly too slow \u2014 can you help me write a proposal to get the lab a faster postgres server, or should we switch to something faster than sql?",
+        4
+      ],
+      [
+        "i think the filesystem is corrupted. the disk hit #%, i found the culprit \u2014 a #gb app.log \u2014 and deleted it with rm. it's gone, ls shows nothing. but df still says #% full! and here's the crazy part: du on the whole disk adds up to #gb less than what df reports used. the numbers don't agree with each other. before i reformat, is there any way to fix a filesystem this broken?",
+        4
+      ],
+      [
+        "i caught the textbook lying. it says dynamic array append is o(#). so i benchmarked a million appends and timed each one. most are nanoseconds, fine \u2014 but every so often one append takes thousands of times longer. append number #,# was a monster. that's not o(#), that's o(n) sometimes! why does the textbook teach something my own measurements disprove?",
+        4
+      ]
+    ]
+  },
+  "task_type_counts": {
+    "misconception_repair": 990,
+    "socratic_practice": 937,
+    "uncertainty_boundary": 630,
+    "source_boundary": 360,
+    "grounded_teaching": 813,
+    "safety_integrity": 343,
+    "planning": 210,
+    "conversational": 227,
+    "accessible_description": 210,
+    "short_factual": 86
+  },
+  "task_type_pct": {
+    "misconception_repair": 20.6,
+    "socratic_practice": 19.5,
+    "uncertainty_boundary": 13.11,
+    "source_boundary": 7.49,
+    "grounded_teaching": 16.92,
+    "safety_integrity": 7.14,
+    "planning": 4.37,
+    "conversational": 4.72,
+    "accessible_description": 4.37,
+    "short_factual": 1.79
+  },
+  "source_counts": {
+    "regen_grader": 990,
+    "regen_tutor": 937,
+    "regen_agent": 1595,
+    "regen_scenario": 974,
+    "legacy_authored": 310
+  },
+  "split_counts": {
+    "train": 3864,
+    "val": 468,
+    "test": 474
+  },
+  "d2_uncertainty_boundary": {
+    "rows": 630,
+    "distinct_topics": 90,
+    "avg_copies_per_topic": 7.0,
+    "identical_canned_nonanswer_rows": 0,
+    "status_counts": {
+      "KNOWN": 180,
+      "CURRENTLY_LEARNING": 180,
+      "NOT_YET_TAUGHT": 180,
+      "UNKNOWN": 90
+    },
+    "responses_shared_across_statuses": 0,
+    "status_changes_response": true,
+    "median_record_lines": 2
+  },
+  "d3_misconception_repair": {
+    "rows": 990,
+    "pct_of_dataset": 20.6,
+    "synthetic_case_n_rubric_rows": 0,
+    "self_contradictory_grading_rows": 0,
+    "misconception_copies_student_rows": 0,
+    "promise_without_delivery_rows": 0,
+    "ends_on_leadin_colon_rows": 0,
+    "verdicts": {
+      "correct": 270,
+      "partially_correct": 720
+    },
+    "truncated_rubric_rows": 0
+  },
+  "d4_socratic_practice": {
+    "rows": 937,
+    "single_turn_rows": 264,
+    "single_turn_pct": 28.18,
+    "just_tell_me_rows": 233,
+    "try_ge_10_hint_only_rows": 0,
+    "answer_key_leak_rows": 0,
+    "distinct_concepts": 178,
+    "distinct_masked_responses": 529
+  },
+  "d5_domain_labels": {
+    "checkable_rows": 2595,
+    "mismatched_rows": 0,
+    "mismatch_pct": 0.0,
+    "top_mismatches": [],
+    "rows_with_course_field": 4806
+  },
+  "d6_openers": {
+    "stock_opener_on_long_answer_rows": 0,
+    "top_opener_share_pct": 3.12,
+    "openers_over_3pct": [
+      {
+        "opener": "Describe the structure and the relationship, not the decoration. For t",
+        "pct": 3.12
+      }
+    ],
+    "distinct_openers": 1091
+  },
+  "d7_grounding": {
+    "rows_with_ungrounded_specifics": 0,
+    "pct": 0.0,
+    "examples": [],
+    "garbled_record_fragments": 0
+  },
+  "d8_task_type_labels": {
+    "safety_integrity_rows": 343,
+    "syllabus_stub_rows_mislabelled_safety": 0,
+    "real_safety_rows": 343
+  },
+  "d9_split_leakage": {
+    "val": {
+      "rows": 468,
+      "distinct": 448,
+      "rows_matching_a_train_prompt": 0,
+      "pct": 0.0
+    },
+    "test": {
+      "rows": 474,
+      "distinct": 459,
+      "rows_matching_a_train_prompt": 0,
+      "pct": 0.0
+    },
+    "family_overlap_train_test": 0,
+    "family_overlap_train_val": 0
+  },
+  "d10_coverage": {
+    "multi_turn_rows_3plus_exchanges": 1487,
+    "multi_turn_pct": 30.94,
+    "multi_turn_sources": [
+      "legacy_authored",
+      "regen_agent",
+      "regen_scenario",
+      "regen_tutor"
+    ],
+    "local_context_rows": 1090,
+    "local_context_pct": 22.68,
+    "empty_or_nonmatching_retrieval_rows": 90,
+    "decline_graded_work_rows": 60,
+    "fully_correct_verdict_rows": 270,
+    "conversational": 227,
+    "planning": 210,
+    "accessible_description": 210
+  },
+  "A_repetition": {
+    "opener_45": {
+      "turns": 8382,
+      "distinct": 1963,
+      "top_pct": 2.77,
+      "over_2pct": [
+        {
+          "text": "Incomplete rather than random - it is a reaso",
+          "n": 232,
+          "pct": 2.77
+        },
+        {
+          "text": "Yes - that part is right, and it is the half ",
+          "n": 176,
+          "pct": 2.1
+        },
+        {
+          "text": "That is it. Say it once more in your own word",
+          "n": 176,
+          "pct": 2.1
+        },
+        {
+          "text": "That instinct is the common one, and it is wo",
+          "n": 173,
+          "pct": 2.06
+        },
+        {
+          "text": "Close, and it is the right end of the problem",
+          "n": 173,
+          "pct": 2.06
+        }
+      ]
+    },
+    "opener_90": {
+      "turns": 8382,
+      "distinct": 2827,
+      "top_pct": 2.77,
+      "over_2pct": [
+        {
+          "text": "Incomplete rather than random - it is a reasonable reading of the evidence you had. The sp",
+          "n": 232,
+          "pct": 2.77
+        },
+        {
+          "text": "Yes - that part is right, and it is the half people usually get. The half that is missing:",
+          "n": 176,
+          "pct": 2.1
+        }
+      ]
+    },
+    "closer_70": {
+      "turns": 8382,
+      "distinct": 1356,
+      "top_pct": 4.08,
+      "over_2pct": [
+        {
+          "text": " the rest slide - that is the ranking I would defend to your lecturer.",
+          "n": 342,
+          "pct": 4.08
+        },
+        {
+          "text": "entence and I will help you cut it down to something you finish today.",
+          "n": 342,
+          "pct": 4.08
+        },
+        {
+          "text": "r in one sentence and send it back - I will tell you whether it holds.",
+          "n": 264,
+          "pct": 3.15
+        },
+        {
+          "text": "play at all; in that case say so rather than forcing the framework on.",
+          "n": 261,
+          "pct": 3.11
+        },
+        {
+          "text": "me which of those three fits your situation and I will hold you to it.",
+          "n": 182,
+          "pct": 2.17
+        },
+        {
+          "text": "swer and I will mark it against the same standard your lecturer would.",
+          "n": 177,
+          "pct": 2.11
+        }
+      ]
+    },
+    "closer_120": {
+      "turns": 8382,
+      "distinct": 2317,
+      "top_pct": 4.08,
+      "over_2pct": [
+        {
+          "text": "ct; that one compounds. Tell me what it is in a sentence and I will help you cut it down to something you finish today.",
+          "n": 342,
+          "pct": 4.08
+        },
+        {
+          "text": " whole thing, one attempt or one paragraph. Tell me which of those three fits your situation and I will hold you to it.",
+          "n": 182,
+          "pct": 2.17
+        }
+      ]
+    }
+  },
+  "A_content_diversity": {
+    "distinct_concept_families": 182,
+    "distinct_families_all": 359,
+    "families_below_60pct_distinct_first_lines": [
+      {
+        "family": "alg_bfs_dijkstra",
+        "rows": 27,
+        "distinct_first_lines": 12,
+        "pct": 44.44
+      },
+      {
+        "family": "alg_bigo_meaning",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "alg_binary_search",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "alg_greedy_dp",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "alg_memo_vs_tab",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "alg_np_meaning",
+        "rows": 27,
+        "distinct_first_lines": 12,
+        "pct": 44.44
+      },
+      {
+        "family": "alg_recursion_base",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "alg_sort_stability",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "co_amdahl",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "co_cache_locality",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "co_number_repr",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "co_units",
+        "rows": 35,
+        "distinct_first_lines": 16,
+        "pct": 45.71
+      },
+      {
+        "family": "db_group_having",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "db_indexes",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "db_joins",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "db_keys_integrity",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "db_normalisation",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "db_null_semantics",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "db_sql_nosql",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "db_transactions",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "ds_array_vs_list",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "ds_bst_balance",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "ds_circular_buffer",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "ds_graph_representation",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "ds_hash_collisions",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "ds_heap_priority",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "ds_set_membership",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "ds_stack_queue",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "ecom_cod_risk",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "ecom_double_charge",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "ecom_funnel_metrics",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "ecom_models",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "ecom_overselling",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "mm_compression",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "mm_contrast",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "mm_frame_rate",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "mm_raster_vector",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "mm_sampling",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "mob_battery",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "mob_dp_px",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "mob_offline_first",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "mob_permissions",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "net_bandwidth_latency",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "net_dns",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "net_ip_mac",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "net_nat_private",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "net_packet_switching",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "net_tcp_udp",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "net_wifi_medium",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "os_deadlock",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "os_file_permissions",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "os_process_thread",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "os_race_conditions",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "os_scheduling",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "os_virtual_memory",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "prof_bias",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "prof_escalation",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "prof_licensing",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "prof_privacy",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "prog_boolean_logic",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "prog_float_equality",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "prog_input_types",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "prog_mutable_default",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "prog_off_by_one",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "prog_scope",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "prog_shallow_copy",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "prog_string_immutable",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "rm_correlation",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "rm_literature_review",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "rm_sampling",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "rm_significance",
+        "rows": 28,
+        "distinct_first_lines": 13,
+        "pct": 46.43
+      },
+      {
+        "family": "se_code_review",
+        "rows": 36,
+        "distinct_first_lines": 21,
+        "pct": 58.33
+      },
+      {
+        "family": "se_flaky_tests",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "se_git_github",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "se_requirements",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "se_technical_debt",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "sec_2fa_phishing",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "sec_backups",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "sec_https_scope",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "sec_least_privilege",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "sec_password_storage",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "sec_sql_injection",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "sec_sym_asym",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "sec_xss_encoding",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "web_accessibility",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "web_caching",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "web_cors",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      },
+      {
+        "family": "web_rest_idempotency",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "web_sessions",
+        "rows": 40,
+        "distinct_first_lines": 21,
+        "pct": 52.5
+      },
+      {
+        "family": "web_validation",
+        "rows": 39,
+        "distinct_first_lines": 20,
+        "pct": 51.28
+      }
+    ],
+    "worst_families_by_first_line_diversity": [
+      {
+        "family": "legacy_A_seed_012",
+        "rows": 4,
+        "distinct_first_lines": 1,
+        "pct": 25.0
+      },
+      {
+        "family": "legacy_A_seed_078",
+        "rows": 4,
+        "distinct_first_lines": 1,
+        "pct": 25.0
+      },
+      {
+        "family": "legacy_A_seed_079",
+        "rows": 4,
+        "distinct_first_lines": 1,
+        "pct": 25.0
+      },
+      {
+        "family": "legacy_A_seed_082",
+        "rows": 4,
+        "distinct_first_lines": 1,
+        "pct": 25.0
+      },
+      {
+        "family": "legacy_A_seed_083",
+        "rows": 4,
+        "distinct_first_lines": 1,
+        "pct": 25.0
+      },
+      {
+        "family": "legacy_A_seed_086",
+        "rows": 4,
+        "distinct_first_lines": 1,
+        "pct": 25.0
+      },
+      {
+        "family": "legacy_A_seed_088",
+        "rows": 4,
+        "distinct_first_lines": 1,
+        "pct": 25.0
+      },
+      {
+        "family": "legacy_A_seed_089",
+        "rows": 4,
+        "distinct_first_lines": 1,
+        "pct": 25.0
+      },
+      {
+        "family": "legacy_A_seed_002",
+        "rows": 3,
+        "distinct_first_lines": 1,
+        "pct": 33.33
+      },
+      {
+        "family": "legacy_A_seed_007",
+        "rows": 3,
+        "distinct_first_lines": 1,
+        "pct": 33.33
+      },
+      {
+        "family": "legacy_A_seed_009",
+        "rows": 3,
+        "distinct_first_lines": 1,
+        "pct": 33.33
+      },
+      {
+        "family": "legacy_A_seed_011",
+        "rows": 3,
+        "distinct_first_lines": 1,
+        "pct": 33.33
+      }
+    ],
+    "misconception_concepts": 90,
+    "distinct_student_answers_total": 690,
+    "distinct_student_answers_per_concept_median": 8,
+    "distinct_student_answers_per_concept_min": 5
+  },
+  "A_multi_turn": {
+    "follow_up_user_turns": 3576,
+    "distinct_follow_ups": 1555,
+    "top_follow_up_pct": 3.69,
+    "follow_ups_over_2pct": [
+      {
+        "text": "What if I do it anyway?",
+        "n": 132,
+        "pct": 3.69
+      },
+      {
+        "text": "What if I fall behind the plan again?",
+        "n": 84,
+        "pct": 2.35
+      }
+    ],
+    "rows_with_followups": 2079
+  },
+  "A_split_depth": {
+    "train": {
+      "rows": 3864,
+      "families": 285,
+      "task_types": 10,
+      "families_per_task_type": {
+        "accessible_description": 27,
+        "conversational": 41,
+        "grounded_teaching": 160,
+        "misconception_repair": 72,
+        "planning": 17,
+        "safety_integrity": 36,
+        "short_factual": 1,
+        "socratic_practice": 72,
+        "source_boundary": 72,
+        "uncertainty_boundary": 72
+      },
+      "task_types_with_fewer_than_12_families": [
+        "short_factual"
+      ],
+      "rows_per_task_type": {
+        "misconception_repair": 792,
+        "socratic_practice": 748,
+        "uncertainty_boundary": 504,
+        "source_boundary": 288,
+        "grounded_teaching": 649,
+        "safety_integrity": 270,
+        "planning": 170,
+        "conversational": 185,
+        "accessible_description": 172,
+        "short_factual": 86
+      }
+    },
+    "val": {
+      "rows": 468,
+      "families": 37,
+      "task_types": 9,
+      "families_per_task_type": {
+        "accessible_description": 4,
+        "conversational": 5,
+        "grounded_teaching": 21,
+        "misconception_repair": 9,
+        "planning": 2,
+        "safety_integrity": 5,
+        "socratic_practice": 9,
+        "source_boundary": 9,
+        "uncertainty_boundary": 9
+      },
+      "task_types_with_fewer_than_12_families": [
+        "accessible_description",
+        "conversational",
+        "misconception_repair",
+        "planning",
+        "safety_integrity",
+        "socratic_practice",
+        "source_boundary",
+        "uncertainty_boundary"
+      ],
+      "rows_per_task_type": {
+        "misconception_repair": 99,
+        "socratic_practice": 95,
+        "uncertainty_boundary": 63,
+        "source_boundary": 36,
+        "grounded_teaching": 83,
+        "safety_integrity": 32,
+        "planning": 20,
+        "conversational": 21,
+        "accessible_description": 19
+      }
+    },
+    "test": {
+      "rows": 474,
+      "families": 37,
+      "task_types": 9,
+      "families_per_task_type": {
+        "accessible_description": 4,
+        "conversational": 5,
+        "grounded_teaching": 21,
+        "misconception_repair": 9,
+        "planning": 2,
+        "safety_integrity": 5,
+        "socratic_practice": 9,
+        "source_boundary": 9,
+        "uncertainty_boundary": 9
+      },
+      "task_types_with_fewer_than_12_families": [
+        "accessible_description",
+        "conversational",
+        "misconception_repair",
+        "planning",
+        "safety_integrity",
+        "socratic_practice",
+        "source_boundary",
+        "uncertainty_boundary"
+      ],
+      "rows_per_task_type": {
+        "misconception_repair": 99,
+        "socratic_practice": 94,
+        "uncertainty_boundary": 63,
+        "source_boundary": 36,
+        "grounded_teaching": 81,
+        "safety_integrity": 41,
+        "planning": 20,
+        "conversational": 21,
+        "accessible_description": 19
+      }
+    }
+  },
+  "A_consistency": {
+    "week_status_contradictions": 210,
+    "week_status_examples": [
+      "R00023",
+      "R00033",
+      "R00063",
+      "R00073",
+      "R00103",
+      "R00113",
+      "R00153",
+      "R00183"
+    ],
+    "multi_question_prompts_with_unaddressed_question": 87,
+    "unaddressed_examples": [
+      "R00029",
+      "R00069",
+      "R00109",
+      "R00149",
+      "R00189",
+      "R00229",
+      "R00269",
+      "R00309"
+    ]
+  },
+  "A_local_spread": {
+    "local_rows": 1621,
+    "local_pct": 33.73,
+    "term_counts": {
+      "ho": 778,
+      "cedi": 254,
+      "pesewa": 134,
+      "kumasi": 133,
+      "cape coast": 128,
+      "mobile money": 113,
+      "momo": 107,
+      "dumsor": 103,
+      "elmina": 103,
+      "trotro": 103,
+      "mtn": 100,
+      "tamale": 97,
+      "accra": 2
+    },
+    "terms_over_2pct": {
+      "kumasi": 2.77,
+      "ho": 16.19,
+      "dumsor": 2.14,
+      "tamale": 2.02,
+      "momo": 2.23,
+      "cape coast": 2.66,
+      "mtn": 2.08,
+      "mobile money": 2.35,
+      "elmina": 2.14,
+      "trotro": 2.14,
+      "cedi": 5.29,
+      "pesewa": 2.79
+    },
+    "families_carrying_local_context": 203,
+    "top_local_families": {
+      "rm_sampling": 37,
+      "ecom_cod_risk": 29,
+      "sec_password_storage": 27,
+      "sec_least_privilege": 27,
+      "prof_escalation": 27,
+      "sec_https_scope": 26,
+      "ecom_models": 26,
+      "rm_correlation": 24
+    }
+  },
+  "E_diversity": {
+    "distinct_masked_prompts": 4599,
+    "target_distinct_prompts_3000": true,
+    "max_template_share_pct": 0.08,
+    "target_no_template_over_2pct": true,
+    "duplicate_assistant_texts": 0,
+    "target_no_duplicate_assistant_text": true,
+    "assistant_len_p10": 408,
+    "assistant_len_median": 1135,
+    "assistant_len_p90": 1898,
+    "short_answers_under_300_chars_pct": 7.89,
+    "target_multi_turn_25pct": true,
+    "target_local_10pct": true,
+    "task_mix_target_delta": {
+      "misconception_repair": {
+        "actual_pct": 20.6,
+        "target_pct": 20,
+        "delta": 0.6
+      },
+      "socratic_practice": {
+        "actual_pct": 19.5,
+        "target_pct": 20,
+        "delta": -0.5
+      },
+      "uncertainty_boundary": {
+        "actual_pct": 13.11,
+        "target_pct": 12,
+        "delta": 1.11
+      },
+      "source_boundary": {
+        "actual_pct": 7.49,
+        "target_pct": 8,
+        "delta": -0.51
+      },
+      "grounded_teaching": {
+        "actual_pct": 16.92,
+        "target_pct": 15,
+        "delta": 1.92
+      },
+      "safety_integrity": {
+        "actual_pct": 7.14,
+        "target_pct": 8,
+        "delta": -0.86
+      },
+      "planning": {
+        "actual_pct": 4.37,
+        "target_pct": 5,
+        "delta": -0.63
+      },
+      "conversational": {
+        "actual_pct": 4.72,
+        "target_pct": 5,
+        "delta": -0.28
+      },
+      "accessible_description": {
+        "actual_pct": 4.37,
+        "target_pct": 4,
+        "delta": 0.37
+      },
+      "other": {
+        "actual_pct": 1.79,
+        "target_pct": 3,
+        "delta": -1.21
+      }
+    }
+  }
+}

@@ -1,0 +1,501 @@
+{
+  "file": "aria_repaired.jsonl",
+  "rows": 4811,
+  "d1_template_collapse": {
+    "distinct_masked_prompts": 4673,
+    "distinct_ratio": 97.13,
+    "top_template_share_pct": 0.08,
+    "templates_over_2pct": 0,
+    "rows_in_templates_over_2pct": 0,
+    "top5": [
+      [
+        "my c++ assignment: two threads each increment a shared `int counter` #,# times. final value should be #,# but i get random junk like #, different every run. `counter++` is one statement \u2014 one line of code! how can half a statement execute? is the thread scheduler broken on my laptop?",
+        4
+      ],
+      [
+        "this is breaking my brain. user 'jos\u00e9' registered on his phone, then can't log in from the lab pc. i printed the stored username and the typed one: both show jos\u00e9. identical. but == says false! i even checked the lengths \u2014 stored is # characters, typed is #. how can the same four visible letters have different lengths? is the database corrupting my strings?",
+        4
+      ],
+      [
+        "my course-listing page takes # seconds to load. it only shows # courses with their instructor names! the database is clearly too slow \u2014 can you help me write a proposal to get the lab a faster postgres server, or should we switch to something faster than sql?",
+        4
+      ],
+      [
+        "i think the filesystem is corrupted. the disk hit #%, i found the culprit \u2014 a #gb app.log \u2014 and deleted it with rm. it's gone, ls shows nothing. but df still says #% full! and here's the crazy part: du on the whole disk adds up to #gb less than what df reports used. the numbers don't agree with each other. before i reformat, is there any way to fix a filesystem this broken?",
+        4
+      ],
+      [
+        "i caught the textbook lying. it says dynamic array append is o(#). so i benchmarked a million appends and timed each one. most are nanoseconds, fine \u2014 but every so often one append takes thousands of times longer. append number #,# was a monster. that's not o(#), that's o(n) sometimes! why does the textbook teach something my own measurements disprove?",
+        4
+      ]
+    ]
+  },
+  "task_type_counts": {
+    "misconception_repair": 990,
+    "socratic_practice": 943,
+    "uncertainty_boundary": 630,
+    "source_boundary": 360,
+    "grounded_teaching": 727,
+    "safety_integrity": 343,
+    "planning": 210,
+    "conversational": 227,
+    "accessible_description": 210,
+    "short_factual": 171
+  },
+  "task_type_pct": {
+    "misconception_repair": 20.58,
+    "socratic_practice": 19.6,
+    "uncertainty_boundary": 13.09,
+    "source_boundary": 7.48,
+    "grounded_teaching": 15.11,
+    "safety_integrity": 7.13,
+    "planning": 4.36,
+    "conversational": 4.72,
+    "accessible_description": 4.36,
+    "short_factual": 3.55
+  },
+  "source_counts": {
+    "regen_grader": 990,
+    "regen_tutor": 943,
+    "regen_agent": 1509,
+    "regen_scenario": 1059,
+    "legacy_authored": 310
+  },
+  "split_counts": {
+    "train": 3376,
+    "val": 734,
+    "test": 701
+  },
+  "d2_uncertainty_boundary": {
+    "rows": 630,
+    "distinct_topics": 90,
+    "avg_copies_per_topic": 7.0,
+    "identical_canned_nonanswer_rows": 0,
+    "status_counts": {
+      "KNOWN": 180,
+      "CURRENTLY_LEARNING": 180,
+      "NOT_YET_TAUGHT": 180,
+      "UNKNOWN": 90
+    },
+    "responses_shared_across_statuses": 0,
+    "status_changes_response": true,
+    "median_record_lines": 2
+  },
+  "d3_misconception_repair": {
+    "rows": 990,
+    "pct_of_dataset": 20.58,
+    "synthetic_case_n_rubric_rows": 0,
+    "self_contradictory_grading_rows": 0,
+    "misconception_copies_student_rows": 0,
+    "promise_without_delivery_rows": 0,
+    "ends_on_leadin_colon_rows": 0,
+    "verdicts": {
+      "partially_correct": 448,
+      "correct": 196,
+      "incorrect": 296,
+      "unanswerable": 32,
+      "ambiguous": 18
+    },
+    "truncated_rubric_rows": 0
+  },
+  "d4_socratic_practice": {
+    "rows": 943,
+    "single_turn_rows": 264,
+    "single_turn_pct": 28.0,
+    "just_tell_me_rows": 239,
+    "try_ge_10_hint_only_rows": 0,
+    "answer_key_leak_rows": 0,
+    "distinct_concepts": 179,
+    "distinct_masked_responses": 529
+  },
+  "d5_domain_labels": {
+    "checkable_rows": 207,
+    "mismatched_rows": 0,
+    "mismatch_pct": 0.0,
+    "top_mismatches": [],
+    "rows_with_course_field": 4811
+  },
+  "d6_openers": {
+    "stock_opener_on_long_answer_rows": 0,
+    "top_opener_share_pct": 2.22,
+    "openers_over_3pct": [],
+    "distinct_openers": 1188
+  },
+  "d7_grounding": {
+    "rows_with_ungrounded_specifics": 0,
+    "pct": 0.0,
+    "examples": [],
+    "garbled_record_fragments": 0
+  },
+  "d8_task_type_labels": {
+    "safety_integrity_rows": 343,
+    "syllabus_stub_rows_mislabelled_safety": 0,
+    "real_safety_rows": 343
+  },
+  "d9_split_leakage": {
+    "val": {
+      "rows": 734,
+      "distinct": 714,
+      "rows_matching_a_train_prompt": 0,
+      "pct": 0.0
+    },
+    "test": {
+      "rows": 701,
+      "distinct": 676,
+      "rows_matching_a_train_prompt": 0,
+      "pct": 0.0
+    },
+    "family_overlap_train_test": 0,
+    "family_overlap_train_val": 0
+  },
+  "d10_coverage": {
+    "multi_turn_rows_3plus_exchanges": 1407,
+    "multi_turn_pct": 29.25,
+    "multi_turn_sources": [
+      "legacy_authored",
+      "regen_agent",
+      "regen_scenario",
+      "regen_tutor"
+    ],
+    "local_context_rows": 745,
+    "local_context_pct": 15.49,
+    "empty_or_nonmatching_retrieval_rows": 90,
+    "decline_graded_work_rows": 60,
+    "fully_correct_verdict_rows": 196,
+    "conversational": 227,
+    "planning": 210,
+    "accessible_description": 210
+  },
+  "A_repetition": {
+    "opener_45": {
+      "turns": 8227,
+      "distinct": 2379,
+      "top_pct": 1.6,
+      "over_2pct": []
+    },
+    "opener_90": {
+      "turns": 8227,
+      "distinct": 3097,
+      "top_pct": 1.6,
+      "over_2pct": []
+    },
+    "closer_70": {
+      "turns": 8227,
+      "distinct": 1823,
+      "top_pct": 1.6,
+      "over_2pct": []
+    },
+    "closer_120": {
+      "turns": 8227,
+      "distinct": 2532,
+      "top_pct": 1.6,
+      "over_2pct": []
+    }
+  },
+  "A_content_diversity": {
+    "distinct_concept_families": 237,
+    "distinct_families_all": 414,
+    "families_below_60pct_distinct_first_lines": [],
+    "worst_families_by_first_line_diversity": [
+      {
+        "family": "legacy_A_seed_012",
+        "rows": 4,
+        "distinct_first_lines": 1,
+        "pct": 25.0
+      },
+      {
+        "family": "legacy_A_seed_078",
+        "rows": 4,
+        "distinct_first_lines": 1,
+        "pct": 25.0
+      },
+      {
+        "family": "legacy_A_seed_079",
+        "rows": 4,
+        "distinct_first_lines": 1,
+        "pct": 25.0
+      },
+      {
+        "family": "legacy_A_seed_082",
+        "rows": 4,
+        "distinct_first_lines": 1,
+        "pct": 25.0
+      },
+      {
+        "family": "legacy_A_seed_083",
+        "rows": 4,
+        "distinct_first_lines": 1,
+        "pct": 25.0
+      },
+      {
+        "family": "legacy_A_seed_086",
+        "rows": 4,
+        "distinct_first_lines": 1,
+        "pct": 25.0
+      },
+      {
+        "family": "legacy_A_seed_088",
+        "rows": 4,
+        "distinct_first_lines": 1,
+        "pct": 25.0
+      },
+      {
+        "family": "legacy_A_seed_089",
+        "rows": 4,
+        "distinct_first_lines": 1,
+        "pct": 25.0
+      },
+      {
+        "family": "legacy_A_seed_002",
+        "rows": 3,
+        "distinct_first_lines": 1,
+        "pct": 33.33
+      },
+      {
+        "family": "legacy_A_seed_007",
+        "rows": 3,
+        "distinct_first_lines": 1,
+        "pct": 33.33
+      },
+      {
+        "family": "legacy_A_seed_009",
+        "rows": 3,
+        "distinct_first_lines": 1,
+        "pct": 33.33
+      },
+      {
+        "family": "legacy_A_seed_011",
+        "rows": 3,
+        "distinct_first_lines": 1,
+        "pct": 33.33
+      }
+    ],
+    "misconception_concepts": 90,
+    "distinct_student_answers_total": 668,
+    "distinct_student_answers_per_concept_median": 8,
+    "distinct_student_answers_per_concept_min": 5
+  },
+  "A_multi_turn": {
+    "follow_up_user_turns": 3416,
+    "distinct_follow_ups": 1521,
+    "top_follow_up_pct": 1.93,
+    "follow_ups_over_2pct": [],
+    "rows_with_followups": 1999
+  },
+  "A_split_depth": {
+    "train": {
+      "rows": 3376,
+      "families": 290,
+      "task_types": 10,
+      "families_per_task_type": {
+        "accessible_description": 25,
+        "conversational": 35,
+        "grounded_teaching": 142,
+        "misconception_repair": 62,
+        "planning": 15,
+        "safety_integrity": 32,
+        "short_factual": 40,
+        "socratic_practice": 62,
+        "source_boundary": 62,
+        "uncertainty_boundary": 62
+      },
+      "task_types_with_fewer_than_12_families": [],
+      "rows_per_task_type": {
+        "misconception_repair": 682,
+        "socratic_practice": 656,
+        "uncertainty_boundary": 434,
+        "source_boundary": 248,
+        "grounded_teaching": 510,
+        "safety_integrity": 257,
+        "planning": 150,
+        "conversational": 179,
+        "accessible_description": 138,
+        "short_factual": 122
+      }
+    },
+    "val": {
+      "rows": 734,
+      "families": 62,
+      "task_types": 10,
+      "families_per_task_type": {
+        "accessible_description": 5,
+        "conversational": 8,
+        "grounded_teaching": 31,
+        "misconception_repair": 14,
+        "planning": 3,
+        "safety_integrity": 7,
+        "short_factual": 8,
+        "socratic_practice": 14,
+        "source_boundary": 14,
+        "uncertainty_boundary": 14
+      },
+      "task_types_with_fewer_than_12_families": [
+        "accessible_description",
+        "conversational",
+        "planning",
+        "safety_integrity",
+        "short_factual"
+      ],
+      "rows_per_task_type": {
+        "misconception_repair": 154,
+        "socratic_practice": 151,
+        "uncertainty_boundary": 98,
+        "source_boundary": 56,
+        "grounded_teaching": 115,
+        "safety_integrity": 61,
+        "planning": 30,
+        "conversational": 16,
+        "accessible_description": 29,
+        "short_factual": 24
+      }
+    },
+    "test": {
+      "rows": 701,
+      "families": 62,
+      "task_types": 10,
+      "families_per_task_type": {
+        "accessible_description": 5,
+        "conversational": 8,
+        "grounded_teaching": 29,
+        "misconception_repair": 14,
+        "planning": 3,
+        "safety_integrity": 7,
+        "short_factual": 8,
+        "socratic_practice": 14,
+        "source_boundary": 14,
+        "uncertainty_boundary": 14
+      },
+      "task_types_with_fewer_than_12_families": [
+        "accessible_description",
+        "conversational",
+        "planning",
+        "safety_integrity",
+        "short_factual"
+      ],
+      "rows_per_task_type": {
+        "misconception_repair": 154,
+        "socratic_practice": 136,
+        "uncertainty_boundary": 98,
+        "source_boundary": 56,
+        "grounded_teaching": 102,
+        "safety_integrity": 25,
+        "planning": 30,
+        "conversational": 32,
+        "accessible_description": 43,
+        "short_factual": 25
+      }
+    }
+  },
+  "A_consistency": {
+    "week_status_contradictions": 0,
+    "week_status_examples": [],
+    "multi_question_prompts_with_unaddressed_question": 1,
+    "unaddressed_examples": [
+      "R04821"
+    ]
+  },
+  "A_local_spread": {
+    "local_rows": 677,
+    "local_pct": 14.07,
+    "term_counts": {
+      "pesewa": 54,
+      "kumasi": 49,
+      "cedi": 47,
+      "tamale": 45,
+      "mobile money": 44,
+      "madina": 41,
+      "elmina": 37,
+      "koforidua": 36,
+      "techiman": 33,
+      "takoradi": 33,
+      "ho": 33,
+      "winneba": 33,
+      "accra": 31,
+      "legon": 29,
+      "ashaiman": 29,
+      "bolgatanga": 27,
+      "cape coast": 27,
+      "mtn": 25,
+      "airteltigo": 25,
+      "sunyani": 24
+    },
+    "terms_over_2pct": {},
+    "families_carrying_local_context": 154,
+    "top_local_families": {
+      "prog_float_equality": 14,
+      "ecom_overselling": 14,
+      "safety_distress#00": 10,
+      "safety_distress#01": 10,
+      "plan_low_bandwidth#03": 10,
+      "plan_low_bandwidth#04": 10,
+      "plan_low_bandwidth#06": 10,
+      "db_indexes": 9
+    }
+  },
+  "E_diversity": {
+    "distinct_masked_prompts": 4673,
+    "target_distinct_prompts_3000": true,
+    "max_template_share_pct": 0.08,
+    "target_no_template_over_2pct": true,
+    "duplicate_assistant_texts": 0,
+    "target_no_duplicate_assistant_text": true,
+    "assistant_len_p10": 325,
+    "assistant_len_median": 1087,
+    "assistant_len_p90": 1870,
+    "short_answers_under_300_chars_pct": 9.58,
+    "target_multi_turn_25pct": true,
+    "target_local_10pct": true,
+    "task_mix_target_delta": {
+      "misconception_repair": {
+        "actual_pct": 20.58,
+        "target_pct": 20,
+        "delta": 0.58
+      },
+      "socratic_practice": {
+        "actual_pct": 19.6,
+        "target_pct": 20,
+        "delta": -0.4
+      },
+      "uncertainty_boundary": {
+        "actual_pct": 13.09,
+        "target_pct": 12,
+        "delta": 1.09
+      },
+      "source_boundary": {
+        "actual_pct": 7.48,
+        "target_pct": 8,
+        "delta": -0.52
+      },
+      "grounded_teaching": {
+        "actual_pct": 15.11,
+        "target_pct": 15,
+        "delta": 0.11
+      },
+      "safety_integrity": {
+        "actual_pct": 7.13,
+        "target_pct": 8,
+        "delta": -0.87
+      },
+      "planning": {
+        "actual_pct": 4.36,
+        "target_pct": 5,
+        "delta": -0.64
+      },
+      "conversational": {
+        "actual_pct": 4.72,
+        "target_pct": 5,
+        "delta": -0.28
+      },
+      "accessible_description": {
+        "actual_pct": 4.36,
+        "target_pct": 4,
+        "delta": 0.36
+      },
+      "other": {
+        "actual_pct": 3.55,
+        "target_pct": 3,
+        "delta": 0.55
+      }
+    }
+  }
+}

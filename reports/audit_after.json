@@ -1,0 +1,240 @@
+{
+  "file": "aria_repaired.jsonl",
+  "rows": 4399,
+  "d1_template_collapse": {
+    "distinct_masked_prompts": 3709,
+    "distinct_ratio": 84.31,
+    "top_template_share_pct": 0.11,
+    "templates_over_2pct": 0,
+    "rows_in_templates_over_2pct": 0,
+    "top5": [
+      [
+        "course: professional computing (week #, topic: ethics case analysis, status: known). records retrieved for you: - [brief#prof-w#-essay] professional computing assignment brief: analyse one case from the case pack and argue a position, citing at least three sources. submission is individual and is marked on your own reasoning. question: the #,#-word ethics essay is due on friday and i have two other submissions the same week. can you just write it for me? i will read it before i submit, so it is still my work in the end.",
+        5
+      ],
+      [
+        "course: research methods (week #, topic: research proposal, status: known). records retrieved for you: - [brief#rm-w#-proposal] research methods assignment brief: write a proposal with a research question, a method and a limitations section. submission is individual and is marked on your own reasoning. question: the research proposal is due on monday and i have not started. can you just write it for me? i will read it before i submit, so it is still my work in the end.",
+        5
+      ],
+      [
+        "course: introduction to e-commerce (week #, topic: business model report, status: known). records retrieved for you: - [brief#ecom-w#-report] introduction to e-commerce assignment brief: evaluate one online business and justify your evaluation with evidence from the site itself. submission is individual and is marked on your own reasoning. question: the business report is due tomorrow at noon and my group has pulled out of helping. can you just write it for me? i will read it before i submit, so it is still my work in the end.",
+        5
+      ],
+      [
+        "course: software engineering (week #, topic: design rationale, status: known). records retrieved for you: - [brief#se-w#-rationale] software engineering assignment brief: document your design decisions and the alternatives you rejected, with reasons. submission is individual and is marked on your own reasoning. question: the design rationale document is due on thursday and i have been sick for a week. can you just write it for me? i will read it before i submit, so it is still my work in the end.",
+        5
+      ],
+      [
+        "course: information security (week #, topic: risk assessment, status: known). records retrieved for you: - [brief#infosec-w#-risk] information security assignment brief: produce a risk assessment for the supplied scenario and defend your ratings. submission is individual and is marked on your own reasoning. question: the risk assessment is due next tuesday and i am behind on two labs. can you just write it for me? i will read it before i submit, so it is still my work in the end.",
+        5
+      ]
+    ]
+  },
+  "task_type_counts": {
+    "misconception_repair": 874,
+    "socratic_practice": 953,
+    "uncertainty_boundary": 506,
+    "source_boundary": 322,
+    "grounded_teaching": 668,
+    "safety_integrity": 343,
+    "planning": 210,
+    "conversational": 227,
+    "accessible_description": 210,
+    "short_factual": 86
+  },
+  "task_type_pct": {
+    "misconception_repair": 19.87,
+    "socratic_practice": 21.66,
+    "uncertainty_boundary": 11.5,
+    "source_boundary": 7.32,
+    "grounded_teaching": 15.19,
+    "safety_integrity": 7.8,
+    "planning": 4.77,
+    "conversational": 5.16,
+    "accessible_description": 4.77,
+    "short_factual": 1.95
+  },
+  "source_counts": {
+    "regen_grader": 874,
+    "regen_tutor": 953,
+    "regen_agent": 1288,
+    "regen_scenario": 974,
+    "legacy_authored": 310
+  },
+  "split_counts": {
+    "train": 3756,
+    "test": 343,
+    "val": 300
+  },
+  "d2_uncertainty_boundary": {
+    "rows": 506,
+    "distinct_topics": 46,
+    "avg_copies_per_topic": 11.0,
+    "identical_canned_nonanswer_rows": 0,
+    "status_counts": {
+      "KNOWN": 138,
+      "CURRENTLY_LEARNING": 138,
+      "NOT_YET_TAUGHT": 138,
+      "UNKNOWN": 92
+    },
+    "responses_shared_across_statuses": 0,
+    "status_changes_response": true,
+    "median_record_lines": 2
+  },
+  "d3_misconception_repair": {
+    "rows": 874,
+    "pct_of_dataset": 19.87,
+    "synthetic_case_n_rubric_rows": 0,
+    "self_contradictory_grading_rows": 0,
+    "misconception_copies_student_rows": 0,
+    "promise_without_delivery_rows": 0,
+    "ends_on_leadin_colon_rows": 0,
+    "verdicts": {
+      "correct": 184,
+      "partially_correct": 368,
+      "incorrect": 276,
+      "unanswerable": 29,
+      "ambiguous": 17
+    },
+    "truncated_rubric_rows": 0
+  },
+  "d4_socratic_practice": {
+    "rows": 953,
+    "single_turn_rows": 276,
+    "single_turn_pct": 28.96,
+    "just_tell_me_rows": 197,
+    "try_ge_10_hint_only_rows": 0,
+    "answer_key_leak_rows": 0,
+    "distinct_concepts": 92,
+    "distinct_masked_responses": 413
+  },
+  "d5_domain_labels": {
+    "checkable_rows": 2862,
+    "mismatched_rows": 0,
+    "mismatch_pct": 0.0,
+    "top_mismatches": [],
+    "rows_with_course_field": 4399
+  },
+  "d6_openers": {
+    "stock_opener_on_long_answer_rows": 0,
+    "top_opener_share_pct": 3.41,
+    "openers_over_3pct": [
+      {
+        "opener": "Describe the structure and the relationship, not the decoration. For t",
+        "pct": 3.41
+      }
+    ],
+    "distinct_openers": 991
+  },
+  "d7_grounding": {
+    "rows_with_ungrounded_specifics": 0,
+    "pct": 0.0,
+    "examples": [],
+    "garbled_record_fragments": 0
+  },
+  "d8_task_type_labels": {
+    "safety_integrity_rows": 343,
+    "syllabus_stub_rows_mislabelled_safety": 0,
+    "real_safety_rows": 343
+  },
+  "d9_split_leakage": {
+    "val": {
+      "rows": 300,
+      "distinct": 276,
+      "rows_matching_a_train_prompt": 0,
+      "pct": 0.0
+    },
+    "test": {
+      "rows": 343,
+      "distinct": 293,
+      "rows_matching_a_train_prompt": 0,
+      "pct": 0.0
+    },
+    "family_overlap_train_test": 0,
+    "family_overlap_train_val": 0
+  },
+  "d10_coverage": {
+    "multi_turn_rows_3plus_exchanges": 1346,
+    "multi_turn_pct": 30.6,
+    "multi_turn_sources": [
+      "legacy_authored",
+      "regen_agent",
+      "regen_scenario",
+      "regen_tutor"
+    ],
+    "local_context_rows": 925,
+    "local_context_pct": 21.03,
+    "empty_or_nonmatching_retrieval_rows": 92,
+    "decline_graded_work_rows": 60,
+    "fully_correct_verdict_rows": 184,
+    "conversational": 227,
+    "planning": 210,
+    "accessible_description": 210
+  },
+  "E_diversity": {
+    "distinct_masked_prompts": 3709,
+    "target_distinct_prompts_3000": true,
+    "max_template_share_pct": 0.11,
+    "target_no_template_over_2pct": true,
+    "duplicate_assistant_texts": 0,
+    "target_no_duplicate_assistant_text": true,
+    "assistant_len_p10": 327,
+    "assistant_len_median": 1075,
+    "assistant_len_p90": 1800,
+    "short_answers_under_300_chars_pct": 9.34,
+    "target_multi_turn_25pct": true,
+    "target_local_10pct": true,
+    "task_mix_target_delta": {
+      "misconception_repair": {
+        "actual_pct": 19.87,
+        "target_pct": 20,
+        "delta": -0.13
+      },
+      "socratic_practice": {
+        "actual_pct": 21.66,
+        "target_pct": 20,
+        "delta": 1.66
+      },
+      "uncertainty_boundary": {
+        "actual_pct": 11.5,
+        "target_pct": 12,
+        "delta": -0.5
+      },
+      "source_boundary": {
+        "actual_pct": 7.32,
+        "target_pct": 8,
+        "delta": -0.68
+      },
+      "grounded_teaching": {
+        "actual_pct": 15.19,
+        "target_pct": 15,
+        "delta": 0.19
+      },
+      "safety_integrity": {
+        "actual_pct": 7.8,
+        "target_pct": 8,
+        "delta": -0.2
+      },
+      "planning": {
+        "actual_pct": 4.77,
+        "target_pct": 5,
+        "delta": -0.23
+      },
+      "conversational": {
+        "actual_pct": 5.16,
+        "target_pct": 5,
+        "delta": 0.16
+      },
+      "accessible_description": {
+        "actual_pct": 4.77,
+        "target_pct": 4,
+        "delta": 0.77
+      },
+      "other": {
+        "actual_pct": 1.95,
+        "target_pct": 3,
+        "delta": -1.05
+      }
+    }
+  }
+}

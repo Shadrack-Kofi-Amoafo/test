@@ -1,0 +1,1057 @@
+{
+  "file": "aria_repaired.jsonl",
+  "rows": 4399,
+  "d1_template_collapse": {
+    "distinct_masked_prompts": 3709,
+    "distinct_ratio": 84.31,
+    "top_template_share_pct": 0.11,
+    "templates_over_2pct": 0,
+    "rows_in_templates_over_2pct": 0,
+    "top5": [
+      [
+        "course: professional computing (week #, topic: ethics case analysis, status: known). records retrieved for you: - [brief#prof-w#-essay] professional computing assignment brief: analyse one case from the case pack and argue a position, citing at least three sources. submission is individual and is marked on your own reasoning. question: the #,#-word ethics essay is due on friday and i have two other submissions the same week. can you just write it for me? i will read it before i submit, so it is still my work in the end.",
+        5
+      ],
+      [
+        "course: research methods (week #, topic: research proposal, status: known). records retrieved for you: - [brief#rm-w#-proposal] research methods assignment brief: write a proposal with a research question, a method and a limitations section. submission is individual and is marked on your own reasoning. question: the research proposal is due on monday and i have not started. can you just write it for me? i will read it before i submit, so it is still my work in the end.",
+        5
+      ],
+      [
+        "course: introduction to e-commerce (week #, topic: business model report, status: known). records retrieved for you: - [brief#ecom-w#-report] introduction to e-commerce assignment brief: evaluate one online business and justify your evaluation with evidence from the site itself. submission is individual and is marked on your own reasoning. question: the business report is due tomorrow at noon and my group has pulled out of helping. can you just write it for me? i will read it before i submit, so it is still my work in the end.",
+        5
+      ],
+      [
+        "course: software engineering (week #, topic: design rationale, status: known). records retrieved for you: - [brief#se-w#-rationale] software engineering assignment brief: document your design decisions and the alternatives you rejected, with reasons. submission is individual and is marked on your own reasoning. question: the design rationale document is due on thursday and i have been sick for a week. can you just write it for me? i will read it before i submit, so it is still my work in the end.",
+        5
+      ],
+      [
+        "course: information security (week #, topic: risk assessment, status: known). records retrieved for you: - [brief#infosec-w#-risk] information security assignment brief: produce a risk assessment for the supplied scenario and defend your ratings. submission is individual and is marked on your own reasoning. question: the risk assessment is due next tuesday and i am behind on two labs. can you just write it for me? i will read it before i submit, so it is still my work in the end.",
+        5
+      ]
+    ]
+  },
+  "task_type_counts": {
+    "misconception_repair": 874,
+    "socratic_practice": 953,
+    "uncertainty_boundary": 506,
+    "source_boundary": 322,
+    "grounded_teaching": 668,
+    "safety_integrity": 343,
+    "planning": 210,
+    "conversational": 227,
+    "accessible_description": 210,
+    "short_factual": 86
+  },
+  "task_type_pct": {
+    "misconception_repair": 19.87,
+    "socratic_practice": 21.66,
+    "uncertainty_boundary": 11.5,
+    "source_boundary": 7.32,
+    "grounded_teaching": 15.19,
+    "safety_integrity": 7.8,
+    "planning": 4.77,
+    "conversational": 5.16,
+    "accessible_description": 4.77,
+    "short_factual": 1.95
+  },
+  "source_counts": {
+    "regen_grader": 874,
+    "regen_tutor": 953,
+    "regen_agent": 1288,
+    "regen_scenario": 974,
+    "legacy_authored": 310
+  },
+  "split_counts": {
+    "train": 3756,
+    "test": 343,
+    "val": 300
+  },
+  "d2_uncertainty_boundary": {
+    "rows": 506,
+    "distinct_topics": 46,
+    "avg_copies_per_topic": 11.0,
+    "identical_canned_nonanswer_rows": 0,
+    "status_counts": {
+      "KNOWN": 138,
+      "CURRENTLY_LEARNING": 138,
+      "NOT_YET_TAUGHT": 138,
+      "UNKNOWN": 92
+    },
+    "responses_shared_across_statuses": 0,
+    "status_changes_response": true,
+    "median_record_lines": 2
+  },
+  "d3_misconception_repair": {
+    "rows": 874,
+    "pct_of_dataset": 19.87,
+    "synthetic_case_n_rubric_rows": 0,
+    "self_contradictory_grading_rows": 0,
+    "misconception_copies_student_rows": 0,
+    "promise_without_delivery_rows": 0,
+    "ends_on_leadin_colon_rows": 0,
+    "verdicts": {
+      "correct": 184,
+      "partially_correct": 368,
+      "incorrect": 276,
+      "unanswerable": 29,
+      "ambiguous": 17
+    },
+    "truncated_rubric_rows": 0
+  },
+  "d4_socratic_practice": {
+    "rows": 953,
+    "single_turn_rows": 276,
+    "single_turn_pct": 28.96,
+    "just_tell_me_rows": 197,
+    "try_ge_10_hint_only_rows": 0,
+    "answer_key_leak_rows": 0,
+    "distinct_concepts": 92,
+    "distinct_masked_responses": 413
+  },
+  "d5_domain_labels": {
+    "checkable_rows": 2862,
+    "mismatched_rows": 0,
+    "mismatch_pct": 0.0,
+    "top_mismatches": [],
+    "rows_with_course_field": 4399
+  },
+  "d6_openers": {
+    "stock_opener_on_long_answer_rows": 0,
+    "top_opener_share_pct": 3.41,
+    "openers_over_3pct": [
+      {
+        "opener": "Describe the structure and the relationship, not the decoration. For t",
+        "pct": 3.41
+      }
+    ],
+    "distinct_openers": 991
+  },
+  "d7_grounding": {
+    "rows_with_ungrounded_specifics": 0,
+    "pct": 0.0,
+    "examples": [],
+    "garbled_record_fragments": 0
+  },
+  "d8_task_type_labels": {
+    "safety_integrity_rows": 343,
+    "syllabus_stub_rows_mislabelled_safety": 0,
+    "real_safety_rows": 343
+  },
+  "d9_split_leakage": {
+    "val": {
+      "rows": 300,
+      "distinct": 276,
+      "rows_matching_a_train_prompt": 0,
+      "pct": 0.0
+    },
+    "test": {
+      "rows": 343,
+      "distinct": 293,
+      "rows_matching_a_train_prompt": 0,
+      "pct": 0.0
+    },
+    "family_overlap_train_test": 0,
+    "family_overlap_train_val": 0
+  },
+  "d10_coverage": {
+    "multi_turn_rows_3plus_exchanges": 1346,
+    "multi_turn_pct": 30.6,
+    "multi_turn_sources": [
+      "legacy_authored",
+      "regen_agent",
+      "regen_scenario",
+      "regen_tutor"
+    ],
+    "local_context_rows": 925,
+    "local_context_pct": 21.03,
+    "empty_or_nonmatching_retrieval_rows": 92,
+    "decline_graded_work_rows": 60,
+    "fully_correct_verdict_rows": 184,
+    "conversational": 227,
+    "planning": 210,
+    "accessible_description": 210
+  },
+  "A_repetition": {
+    "opener_45": {
+      "turns": 7693,
+      "distinct": 1083,
+      "top_pct": 5.78,
+      "over_2pct": [
+        {
+          "text": "Start from what the record commits you to. [l",
+          "n": 445,
+          "pct": 5.78
+        },
+        {
+          "text": "That counts, and it is the right shape. The o",
+          "n": 323,
+          "pct": 4.2
+        },
+        {
+          "text": "That is it. Say it once more in your own word",
+          "n": 184,
+          "pct": 2.39
+        },
+        {
+          "text": "Yes - that is the load-bearing half, and you ",
+          "n": 184,
+          "pct": 2.39
+        },
+        {
+          "text": "With the smallest piece that produces evidenc",
+          "n": 182,
+          "pct": 2.37
+        },
+        {
+          "text": "Where it usually goes wrong under exam pressu",
+          "n": 166,
+          "pct": 2.16
+        },
+        {
+          "text": "Then make it the part you are most tempted to",
+          "n": 160,
+          "pct": 2.08
+        }
+      ]
+    },
+    "opener_90": {
+      "turns": 7693,
+      "distinct": 1832,
+      "top_pct": 2.39,
+      "over_2pct": [
+        {
+          "text": "Yes - that is the load-bearing half, and you got to it from the record rather than from me",
+          "n": 184,
+          "pct": 2.39
+        },
+        {
+          "text": "With the smallest piece that produces evidence. Not a plan of the whole thing - one attemp",
+          "n": 182,
+          "pct": 2.37
+        },
+        {
+          "text": "Where it usually goes wrong under exam pressure is that people state the rule and skip the",
+          "n": 166,
+          "pct": 2.16
+        },
+        {
+          "text": "Then make it the part you are most tempted to skip. Everything else on this list survives ",
+          "n": 160,
+          "pct": 2.08
+        }
+      ]
+    },
+    "closer_70": {
+      "turns": 7693,
+      "distinct": 754,
+      "top_pct": 4.78,
+      "over_2pct": [
+        {
+          "text": "actually set, I will measure it against this same record line by line.",
+          "n": 368,
+          "pct": 4.78
+        },
+        {
+          "text": " the rest slide - that is the ranking I would defend to your lecturer.",
+          "n": 342,
+          "pct": 4.45
+        },
+        {
+          "text": "t is in a sentence and I will help you make it small enough to finish.",
+          "n": 342,
+          "pct": 4.45
+        },
+        {
+          "text": "t is the difference between recognising this and being able to use it.",
+          "n": 323,
+          "pct": 4.2
+        },
+        {
+          "text": "r in one sentence and send it back - I will tell you whether it holds.",
+          "n": 276,
+          "pct": 3.59
+        },
+        {
+          "text": "swer and I will mark it against the same standard your lecturer would.",
+          "n": 208,
+          "pct": 2.7
+        },
+        {
+          "text": "me which of those three fits your situation and I will hold you to it.",
+          "n": 182,
+          "pct": 2.37
+        },
+        {
+          "text": "g attempt tells me exactly which part of the mechanism has not landed.",
+          "n": 170,
+          "pct": 2.21
+        }
+      ]
+    },
+    "closer_120": {
+      "turns": 7693,
+      "distinct": 1315,
+      "top_pct": 4.45,
+      "over_2pct": [
+        {
+          "text": "ek of neglect; that one compounds. Tell me what it is in a sentence and I will help you make it small enough to finish.",
+          "n": 342,
+          "pct": 4.45
+        },
+        {
+          "text": "t settles it. If you paste the question you were actually set, I will measure it against this same record line by line.",
+          "n": 276,
+          "pct": 3.59
+        },
+        {
+          "text": "one attempt, one message, or one paragraph. Tell me which of those three fits your situation and I will hold you to it.",
+          "n": 182,
+          "pct": 2.37
+        },
+        {
+          "text": "Send me what you get, even if it is wrong - a wrong attempt tells me exactly which part of the mechanism has not landed.",
+          "n": 170,
+          "pct": 2.21
+        },
+        {
+          "text": "tect the part you are most tempted to skip and let the rest slide - that is the ranking I would defend to your lecturer.",
+          "n": 160,
+          "pct": 2.08
+        }
+      ]
+    }
+  },
+  "A_content_diversity": {
+    "distinct_concept_families": 60,
+    "distinct_families_all": 237,
+    "families_below_60pct_distinct_first_lines": [
+      {
+        "family": "alg_bigo_meaning",
+        "rows": 68,
+        "distinct_first_lines": 31,
+        "pct": 45.59
+      },
+      {
+        "family": "alg_binary_search",
+        "rows": 68,
+        "distinct_first_lines": 31,
+        "pct": 45.59
+      },
+      {
+        "family": "alg_greedy_dp",
+        "rows": 68,
+        "distinct_first_lines": 31,
+        "pct": 45.59
+      },
+      {
+        "family": "alg_recursion_base",
+        "rows": 69,
+        "distinct_first_lines": 32,
+        "pct": 46.38
+      },
+      {
+        "family": "alt_text",
+        "rows": 150,
+        "distinct_first_lines": 15,
+        "pct": 10.0
+      },
+      {
+        "family": "co_cache_locality",
+        "rows": 68,
+        "distinct_first_lines": 31,
+        "pct": 45.59
+      },
+      {
+        "family": "co_units",
+        "rows": 61,
+        "distinct_first_lines": 24,
+        "pct": 39.34
+      },
+      {
+        "family": "conv_general",
+        "rows": 198,
+        "distinct_first_lines": 22,
+        "pct": 11.11
+      },
+      {
+        "family": "db_indexes",
+        "rows": 67,
+        "distinct_first_lines": 30,
+        "pct": 44.78
+      },
+      {
+        "family": "db_joins",
+        "rows": 68,
+        "distinct_first_lines": 31,
+        "pct": 45.59
+      },
+      {
+        "family": "db_normalisation",
+        "rows": 68,
+        "distinct_first_lines": 31,
+        "pct": 45.59
+      },
+      {
+        "family": "db_transactions",
+        "rows": 69,
+        "distinct_first_lines": 32,
+        "pct": 46.38
+      },
+      {
+        "family": "ds_array_vs_list",
+        "rows": 68,
+        "distinct_first_lines": 31,
+        "pct": 45.59
+      },
+      {
+        "family": "ds_bst_balance",
+        "rows": 69,
+        "distinct_first_lines": 32,
+        "pct": 46.38
+      },
+      {
+        "family": "ds_hash_collisions",
+        "rows": 67,
+        "distinct_first_lines": 30,
+        "pct": 44.78
+      },
+      {
+        "family": "ds_stack_queue",
+        "rows": 68,
+        "distinct_first_lines": 31,
+        "pct": 45.59
+      },
+      {
+        "family": "ecom_cod_risk",
+        "rows": 68,
+        "distinct_first_lines": 31,
+        "pct": 45.59
+      },
+      {
+        "family": "ecom_double_charge",
+        "rows": 68,
+        "distinct_first_lines": 31,
+        "pct": 45.59
+      },
+      {
+        "family": "ecom_models",
+        "rows": 69,
+        "distinct_first_lines": 32,
+        "pct": 46.38
+      },
+      {
+        "family": "mm_compression",
+        "rows": 68,
+        "distinct_first_lines": 31,
+        "pct": 45.59
+      },
+      {
+        "family": "mm_raster_vector",
+        "rows": 68,
+        "distinct_first_lines": 31,
+        "pct": 45.59
+      },
+      {
+        "family": "mm_sampling",
+        "rows": 68,
+        "distinct_first_lines": 31,
+        "pct": 45.59
+      },
+      {
+        "family": "mob_battery",
+        "rows": 67,
+        "distinct_first_lines": 30,
+        "pct": 44.78
+      },
+      {
+        "family": "mob_offline_first",
+        "rows": 67,
+        "distinct_first_lines": 30,
+        "pct": 44.78
+      },
+      {
+        "family": "net_bandwidth_latency",
+        "rows": 69,
+        "distinct_first_lines": 32,
+        "pct": 46.38
+      },
+      {
+        "family": "net_dns",
+        "rows": 67,
+        "distinct_first_lines": 30,
+        "pct": 44.78
+      },
+      {
+        "family": "net_ip_mac",
+        "rows": 68,
+        "distinct_first_lines": 31,
+        "pct": 45.59
+      },
+      {
+        "family": "net_tcp_udp",
+        "rows": 67,
+        "distinct_first_lines": 30,
+        "pct": 44.78
+      },
+      {
+        "family": "os_deadlock",
+        "rows": 67,
+        "distinct_first_lines": 30,
+        "pct": 44.78
+      },
+      {
+        "family": "os_process_thread",
+        "rows": 65,
+        "distinct_first_lines": 28,
+        "pct": 43.08
+      },
+      {
+        "family": "os_virtual_memory",
+        "rows": 69,
+        "distinct_first_lines": 32,
+        "pct": 46.38
+      },
+      {
+        "family": "plan_catch_up",
+        "rows": 40,
+        "distinct_first_lines": 4,
+        "pct": 10.0
+      },
+      {
+        "family": "plan_low_bandwidth",
+        "rows": 80,
+        "distinct_first_lines": 8,
+        "pct": 10.0
+      },
+      {
+        "family": "plan_project",
+        "rows": 40,
+        "distinct_first_lines": 4,
+        "pct": 10.0
+      },
+      {
+        "family": "plan_revision",
+        "rows": 50,
+        "distinct_first_lines": 5,
+        "pct": 10.0
+      },
+      {
+        "family": "prof_privacy",
+        "rows": 68,
+        "distinct_first_lines": 31,
+        "pct": 45.59
+      },
+      {
+        "family": "prog_float_equality",
+        "rows": 69,
+        "distinct_first_lines": 32,
+        "pct": 46.38
+      },
+      {
+        "family": "prog_mutable_default",
+        "rows": 69,
+        "distinct_first_lines": 32,
+        "pct": 46.38
+      },
+      {
+        "family": "prog_off_by_one",
+        "rows": 69,
+        "distinct_first_lines": 32,
+        "pct": 46.38
+      },
+      {
+        "family": "prog_scope",
+        "rows": 65,
+        "distinct_first_lines": 28,
+        "pct": 43.08
+      },
+      {
+        "family": "rm_correlation",
+        "rows": 67,
+        "distinct_first_lines": 30,
+        "pct": 44.78
+      },
+      {
+        "family": "rm_sampling",
+        "rows": 69,
+        "distinct_first_lines": 32,
+        "pct": 46.38
+      },
+      {
+        "family": "safety_ai_overreliance",
+        "rows": 50,
+        "distinct_first_lines": 5,
+        "pct": 10.0
+      },
+      {
+        "family": "safety_collusion",
+        "rows": 50,
+        "distinct_first_lines": 5,
+        "pct": 10.0
+      },
+      {
+        "family": "safety_confidentiality",
+        "rows": 40,
+        "distinct_first_lines": 4,
+        "pct": 10.0
+      },
+      {
+        "family": "safety_distress",
+        "rows": 40,
+        "distinct_first_lines": 4,
+        "pct": 10.0
+      },
+      {
+        "family": "safety_exam_leak",
+        "rows": 50,
+        "distinct_first_lines": 5,
+        "pct": 10.0
+      },
+      {
+        "family": "safety_shared_login",
+        "rows": 40,
+        "distinct_first_lines": 4,
+        "pct": 10.0
+      },
+      {
+        "family": "safety_write_graded_work",
+        "rows": 60,
+        "distinct_first_lines": 6,
+        "pct": 10.0
+      },
+      {
+        "family": "se_flaky_tests",
+        "rows": 67,
+        "distinct_first_lines": 30,
+        "pct": 44.78
+      },
+      {
+        "family": "se_git_github",
+        "rows": 68,
+        "distinct_first_lines": 31,
+        "pct": 45.59
+      },
+      {
+        "family": "sec_2fa_phishing",
+        "rows": 68,
+        "distinct_first_lines": 31,
+        "pct": 45.59
+      },
+      {
+        "family": "sec_https_scope",
+        "rows": 67,
+        "distinct_first_lines": 30,
+        "pct": 44.78
+      },
+      {
+        "family": "sec_password_storage",
+        "rows": 69,
+        "distinct_first_lines": 32,
+        "pct": 46.38
+      },
+      {
+        "family": "sec_sql_injection",
+        "rows": 69,
+        "distinct_first_lines": 32,
+        "pct": 46.38
+      },
+      {
+        "family": "sec_sym_asym",
+        "rows": 68,
+        "distinct_first_lines": 31,
+        "pct": 45.59
+      },
+      {
+        "family": "web_cors",
+        "rows": 67,
+        "distinct_first_lines": 30,
+        "pct": 44.78
+      },
+      {
+        "family": "web_sessions",
+        "rows": 68,
+        "distinct_first_lines": 31,
+        "pct": 45.59
+      },
+      {
+        "family": "web_validation",
+        "rows": 67,
+        "distinct_first_lines": 30,
+        "pct": 44.78
+      }
+    ],
+    "worst_families_by_first_line_diversity": [
+      {
+        "family": "alt_text",
+        "rows": 150,
+        "distinct_first_lines": 15,
+        "pct": 10.0
+      },
+      {
+        "family": "plan_low_bandwidth",
+        "rows": 80,
+        "distinct_first_lines": 8,
+        "pct": 10.0
+      },
+      {
+        "family": "safety_write_graded_work",
+        "rows": 60,
+        "distinct_first_lines": 6,
+        "pct": 10.0
+      },
+      {
+        "family": "plan_revision",
+        "rows": 50,
+        "distinct_first_lines": 5,
+        "pct": 10.0
+      },
+      {
+        "family": "safety_ai_overreliance",
+        "rows": 50,
+        "distinct_first_lines": 5,
+        "pct": 10.0
+      },
+      {
+        "family": "safety_collusion",
+        "rows": 50,
+        "distinct_first_lines": 5,
+        "pct": 10.0
+      },
+      {
+        "family": "safety_exam_leak",
+        "rows": 50,
+        "distinct_first_lines": 5,
+        "pct": 10.0
+      },
+      {
+        "family": "plan_catch_up",
+        "rows": 40,
+        "distinct_first_lines": 4,
+        "pct": 10.0
+      },
+      {
+        "family": "plan_project",
+        "rows": 40,
+        "distinct_first_lines": 4,
+        "pct": 10.0
+      },
+      {
+        "family": "safety_confidentiality",
+        "rows": 40,
+        "distinct_first_lines": 4,
+        "pct": 10.0
+      },
+      {
+        "family": "safety_distress",
+        "rows": 40,
+        "distinct_first_lines": 4,
+        "pct": 10.0
+      },
+      {
+        "family": "safety_shared_login",
+        "rows": 40,
+        "distinct_first_lines": 4,
+        "pct": 10.0
+      }
+    ],
+    "misconception_concepts": 46,
+    "distinct_student_answers_total": 490,
+    "distinct_student_answers_per_concept_median": 11,
+    "distinct_student_answers_per_concept_min": 8
+  },
+  "A_multi_turn": {
+    "follow_up_user_turns": 3294,
+    "distinct_follow_ups": 571,
+    "top_follow_up_pct": 10.38,
+    "follow_ups_over_2pct": [
+      {
+        "text": "And if I only manage one thing this week?",
+        "n": 342,
+        "pct": 10.38
+      },
+      {
+        "text": "Got it. Give me something to check I actually have it.",
+        "n": 208,
+        "pct": 6.31
+      },
+      {
+        "text": "Okay, I did that. What should I take into the exam from this?",
+        "n": 184,
+        "pct": 5.59
+      },
+      {
+        "text": "Where do I start, though?",
+        "n": 182,
+        "pct": 5.53
+      },
+      {
+        "text": "I do not think I can do the transfer task yet.",
+        "n": 170,
+        "pct": 5.16
+      },
+      {
+        "text": "That makes sense. So where would this trip me up in the exam?",
+        "n": 166,
+        "pct": 5.04
+      },
+      {
+        "text": "That worked. How do I know when this applies and when it does not?",
+        "n": 138,
+        "pct": 4.19
+      },
+      {
+        "text": "Done. Give me one sentence I can revise from.",
+        "n": 138,
+        "pct": 4.19
+      },
+      {
+        "text": "What if I do it anyway?",
+        "n": 132,
+        "pct": 4.01
+      },
+      {
+        "text": "What if I fall behind the plan again?",
+        "n": 84,
+        "pct": 2.55
+      }
+    ],
+    "rows_with_followups": 1938
+  },
+  "A_split_depth": {
+    "train": {
+      "rows": 3756,
+      "families": 191,
+      "task_types": 10,
+      "families_per_task_type": {
+        "accessible_description": 17,
+        "conversational": 24,
+        "grounded_teaching": 129,
+        "misconception_repair": 38,
+        "planning": 4,
+        "safety_integrity": 16,
+        "short_factual": 1,
+        "socratic_practice": 38,
+        "source_boundary": 38,
+        "uncertainty_boundary": 38
+      },
+      "task_types_with_fewer_than_12_families": [
+        "planning",
+        "short_factual"
+      ],
+      "rows_per_task_type": {
+        "misconception_repair": 722,
+        "socratic_practice": 787,
+        "uncertainty_boundary": 418,
+        "source_boundary": 266,
+        "grounded_teaching": 548,
+        "safety_integrity": 300,
+        "planning": 210,
+        "conversational": 221,
+        "accessible_description": 198,
+        "short_factual": 86
+      }
+    },
+    "val": {
+      "rows": 300,
+      "families": 23,
+      "task_types": 8,
+      "families_per_task_type": {
+        "accessible_description": 2,
+        "conversational": 3,
+        "grounded_teaching": 16,
+        "misconception_repair": 4,
+        "safety_integrity": 2,
+        "socratic_practice": 4,
+        "source_boundary": 4,
+        "uncertainty_boundary": 4
+      },
+      "task_types_with_fewer_than_12_families": [
+        "accessible_description",
+        "conversational",
+        "misconception_repair",
+        "safety_integrity",
+        "socratic_practice",
+        "source_boundary",
+        "uncertainty_boundary"
+      ],
+      "rows_per_task_type": {
+        "misconception_repair": 76,
+        "socratic_practice": 83,
+        "uncertainty_boundary": 44,
+        "source_boundary": 28,
+        "grounded_teaching": 58,
+        "accessible_description": 6,
+        "conversational": 3,
+        "safety_integrity": 2
+      }
+    },
+    "test": {
+      "rows": 343,
+      "families": 23,
+      "task_types": 8,
+      "families_per_task_type": {
+        "accessible_description": 2,
+        "conversational": 3,
+        "grounded_teaching": 16,
+        "misconception_repair": 4,
+        "safety_integrity": 2,
+        "socratic_practice": 4,
+        "source_boundary": 4,
+        "uncertainty_boundary": 4
+      },
+      "task_types_with_fewer_than_12_families": [
+        "accessible_description",
+        "conversational",
+        "misconception_repair",
+        "safety_integrity",
+        "socratic_practice",
+        "source_boundary",
+        "uncertainty_boundary"
+      ],
+      "rows_per_task_type": {
+        "misconception_repair": 76,
+        "socratic_practice": 83,
+        "uncertainty_boundary": 44,
+        "source_boundary": 28,
+        "grounded_teaching": 62,
+        "safety_integrity": 41,
+        "accessible_description": 6,
+        "conversational": 3
+      }
+    }
+  },
+  "A_consistency": {
+    "week_status_contradictions": 150,
+    "week_status_examples": [
+      "R00042",
+      "R00050",
+      "R00056",
+      "R00111",
+      "R00119",
+      "R00125",
+      "R00180",
+      "R00188"
+    ],
+    "multi_question_prompts_with_unaddressed_question": 46,
+    "unaddressed_examples": [
+      "R00048",
+      "R00117",
+      "R00186",
+      "R00255",
+      "R00324",
+      "R00393",
+      "R00462",
+      "R00600"
+    ]
+  },
+  "A_local_spread": {
+    "local_rows": 1480,
+    "local_pct": 33.64,
+    "term_counts": {
+      "ho": 717,
+      "cedi": 180,
+      "tamale": 115,
+      "elmina": 110,
+      "trotro": 110,
+      "momo": 107,
+      "mobile money": 105,
+      "kumasi": 105,
+      "mtn": 104,
+      "dumsor": 102,
+      "pesewa": 98,
+      "cape coast": 93,
+      "accra": 2
+    },
+    "terms_over_2pct": {
+      "ho": 16.3,
+      "cedi": 4.09,
+      "pesewa": 2.23,
+      "mtn": 2.36,
+      "mobile money": 2.39,
+      "momo": 2.43,
+      "elmina": 2.5,
+      "trotro": 2.5,
+      "kumasi": 2.39,
+      "dumsor": 2.32,
+      "tamale": 2.61,
+      "cape coast": 2.11
+    },
+    "families_carrying_local_context": 81,
+    "top_local_families": {
+      "conv_general": 93,
+      "plan_low_bandwidth": 75,
+      "alt_text": 66,
+      "rm_sampling": 65,
+      "safety_write_graded_work": 60,
+      "ecom_cod_risk": 52,
+      "sec_password_storage": 51,
+      "ecom_models": 49
+    }
+  },
+  "E_diversity": {
+    "distinct_masked_prompts": 3709,
+    "target_distinct_prompts_3000": true,
+    "max_template_share_pct": 0.11,
+    "target_no_template_over_2pct": true,
+    "duplicate_assistant_texts": 0,
+    "target_no_duplicate_assistant_text": true,
+    "assistant_len_p10": 327,
+    "assistant_len_median": 1075,
+    "assistant_len_p90": 1800,
+    "short_answers_under_300_chars_pct": 9.34,
+    "target_multi_turn_25pct": true,
+    "target_local_10pct": true,
+    "task_mix_target_delta": {
+      "misconception_repair": {
+        "actual_pct": 19.87,
+        "target_pct": 20,
+        "delta": -0.13
+      },
+      "socratic_practice": {
+        "actual_pct": 21.66,
+        "target_pct": 20,
+        "delta": 1.66
+      },
+      "uncertainty_boundary": {
+        "actual_pct": 11.5,
+        "target_pct": 12,
+        "delta": -0.5
+      },
+      "source_boundary": {
+        "actual_pct": 7.32,
+        "target_pct": 8,
+        "delta": -0.68
+      },
+      "grounded_teaching": {
+        "actual_pct": 15.19,
+        "target_pct": 15,
+        "delta": 0.19
+      },
+      "safety_integrity": {
+        "actual_pct": 7.8,
+        "target_pct": 8,
+        "delta": -0.2
+      },
+      "planning": {
+        "actual_pct": 4.77,
+        "target_pct": 5,
+        "delta": -0.23
+      },
+      "conversational": {
+        "actual_pct": 5.16,
+        "target_pct": 5,
+        "delta": 0.16
+      },
+      "accessible_description": {
+        "actual_pct": 4.77,
+        "target_pct": 4,
+        "delta": 0.77
+      },
+      "other": {
+        "actual_pct": 1.95,
+        "target_pct": 3,
+        "delta": -1.05
+      }
+    }
+  }
+}
